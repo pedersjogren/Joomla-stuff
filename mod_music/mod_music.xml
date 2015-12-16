@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="   .0" client="site" method="install">
+	<name>A PlayAlong playlist</name>
+	<author>Peder Sjogren</author>
+	<creationDate>Dec 2015</creationDate>
+	<copyright>Copyright (C)2015 music </copyright>
+	<license>GNU General Public License version</license>
+	<authorEmail>ped.sjogren@gmail.com</authorEmail>
+	<authorUrl>ped.sjogren@gmail.com</authorUrl>
+	<version>1.0</version>
+	<description>A module for displaying music</description>
+    
+  	<install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/jos_pa_videolesson.sql</file>
+        </sql>
+    </install>
+    
+    <media destination="mod_music" folder="media">
+		<folder>css</folder>
+		<folder>images</folder>
+	</media>
+	<files>
+		<filename module="mod_music">mod_music.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_music.xml</filename>
+        <folder>tmpl</folder>
+        <folder>sql</folder>
+        <folder>models</folder>
+	</files>
+    <config>
+    		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="Titel"
+					type="text"
+					default=""
+					label="Titel"
+					description="Titel till spellistan" />
+			</fieldset>
+		</fields>
+    </config>
+</extension>

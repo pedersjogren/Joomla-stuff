@@ -1,0 +1,63 @@
+.modul{
+  width: 100%;
+  max-width:330px;     
+  margin: 0;
+  padding: 0;
+  display: block;
+  clear: left;
+  min-height: 52px;
+}
+
+
+#header{
+  font-family:'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans','Tahoma',sans-serif;
+  width: 300px;
+  margin: 3px;
+  margin-left: 30px;    
+  display: block;
+
+    }
+
+.no_bullet{
+  list-style: none; 
+}
+
+.section--alpha {
+  font-family:'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans','Tahoma',sans-serif;
+  padding:5px;
+  margin-left: 0;
+  background-color: #fdf4d1;
+  border-top: 1px solid #f8d347;
+   
+}
+
+.section {
+  font-family:'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans','Tahoma',sans-serif;
+  padding:5px;
+  margin-left: 0;
+  border-top: 1px solid #f8d347;
+  border-bottom: 1px solid #f8d347;     
+}
+
+
+#pic{
+  background:url("../images/badge_guitar.gif") no-repeat 0 0;
+  margin-top:1px;     
+  padding: 10px;    
+  width: 10px; 
+  heigh: 10px;
+  display: block;
+  float: left;
+  background-size: contain;    
+}
+
+#pic_2{
+  background:url("../images/header_section_button_right.png") no-repeat 0 0;
+  margin-top:5px;     
+  padding:6px;    
+  width: 5px; 
+  heigh: 5px;
+  display: block;
+  float: right;
+  background-size: contain;    
+}

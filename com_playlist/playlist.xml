@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component"
+           version="3.2.0"
+           method="upgrade">
+
+	<name>Playlist</name>
+	<creationDate>December 2015</creationDate>
+	<author>Peder Sjögren</author>
+	<authorEmail>ped.sjogren@gmail.com</authorEmail>
+	<authorUrl>http://www.example.org</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>0.0.2</version>
+	<description>PlayAlong</description>
+
+    <!--
+	<install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/jos_pa_videolesson.sql</file>
+        </sql>
+    </install>
+
+	-->
+    
+    <media destination="com_playlist" folder="media">
+		<folder>css</folder>
+		<folder>images</folder>
+	</media>
+    
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>playlist.php</filename>
+        <filename>controller.php</filename>
+		<folder>views</folder>
+        <folder>models</folder>
+	</files>
+
+	<administration>
+		
+		<menu link='index.php?option=com_playlist'>Playlist</menu>
+	
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>playlist.php</filename>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+		</files>
+	</administration>
+
+</extension>
